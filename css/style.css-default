@@ -1,0 +1,192 @@
+
+/* Typography */
+
+
+
+
+
+/* // End typography */
+
+
+/*	Resets
+	------	*/
+
+html,body,div, span,  object,  iframe,  h1,  h2,  h3,  h4,  h5,  h6,  p,  blockquote,  pre,  a,  abbr,  address,  cite,  code,  del,  dfn,  em, img,ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,  dl,  dt,  dd,  ol,  ul,  li,  fieldset,  form,  label,  legend,  table,  caption,  tbody,  tfoot,  thead,  tr,  th,  td,  article,  aside,  canvas,  details,  figure,  figcaption,  hgroup,  menu,  footer,  header,  nav,  section,  summary,  time,  mark,  audio,  video {margin: 0; padding: 0; border: 0; }
+
+ ul{list-style: none; } 
+ article, aside, canvas, figure,figure img,  figcaption,  hgroup,  footer,  header,  nav,  section,  audio,  video {display: block;}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table{border-collapse: collapse; border-spacing: 0; }
+b, strong { font-weight: bold; }
+[type="checkbox"], [type="radio"] { box-sizing: border-box; padding: 0; }
+[type="search"] { -webkit-appearance: textfield; outline-offset: -2px; }
+[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+::-webkit-file-upload-button {-webkit-appearance: button; font: inherit;}
+
+ .clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0; height:0; font-size: 0;}
+ a img{border:0; border-style: none; }
+ a, input, select, textarea{outline:none;}
+ img{width: auto; height: auto; max-width: 100%; vertical-align: bottom; border-style: none;}
+
+/* Selection colours (easy to forget) */
+ img::selection 		{background: transparent;}
+ img::-moz-selection	{background: transparent;}
+ a{text-decoration: none; display: inline-block;}
+
+ input[type='number']{-moz-appearance:textfield;}
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button{-webkit-appearance: none;}
+ input::-moz-focus-inner{border:0; padding: 0; }
+ input[type="search"]::-webkit-search-decoration,
+ input[type="search"]::-webkit-search-cancel-button,
+ input[type="search"]::-webkit-search-results-button,
+ input[type="search"]::-webkit-search-results-decoration {
+   display: none;
+ }
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+/*
+
+Font property css
+
+font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;
+
+*/
+
+body{background: rgb(255,255,255); -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:auto;}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+/* Global style */
+h1,  h2,  h3,  h4,  h5,  h6{}
+
+
+
+
+p{}
+span{}
+dfn,  address,  em{font-style: normal;}
+label,  input[type="submit"]{cursor: pointer;}
+button:focus{outline: none;}
+.btn{-webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
+.large{width: 250px;}
+.medium{}
+.small{}
+.transparent{}
+.common-wrap{max-width: 1170px; margin: 0 auto; clear: both; padding: 0 20px;}
+
+
+.feature-items{width: 100%; float: left; height:474px; border-bottom:2px solid #ffffff; background: #1c1c2f}
+.feature-items .full-img{width: 66.66666666666667%; height:100%; float: left; border-right: 2px solid #ffffff; position: relative}
+.feature-items .full-img article{width: 100%; height:100%; clear: both; position: relative}
+.feature-items article a{width: 100%; height:100%; color: #ffffff; text-decoration: none; display: block; position: absolute; z-index: 5}
+.feature-items .full-img article .content{ position: absolute; right: 0; bottom: 40px; z-index: 3; width: 72%;}
+.feature-items .full-img article .content span.post-date{ background: url(../images/featured-cover-post-date.png) 2px center no-repeat;   font-size: 22px; display: block; color: rgba(255,255,255,.7); margin-left: 2px; padding-left: 25px;}
+.feature-items .full-img article .content h2{ font-weight: 700; font-size: 48px; line-height: 1.1; color: #fff; max-width: 800px; width: 90%; letter-spacing: 1px; text-shadow: 0 2px 0 rgba(0, 0, 0, .3);  margin-top: 16px; }
+.feature-items .full-img article .content .post-author{ display: block; height: 36px; line-height: 36px; text-decoration: none; color: #fff; margin-left: 5px; margin-top: 10px;}
+.feature-items .full-img article .content .post-author span.img img { float: left; width: 36px; height: 36px; border-radius: 100%; margin-right:18px; background: #69553A; box-shadow: 0 0 0 4px rgba(255,255,255,.2)}
+.feature-items .full-img article .content .post-author span.name  { font-size: 24px; line-height: 34px;  color: rgba(255,255,255,.9)}
+.feature-items article::after { position: absolute; top: 0; left: 0; right: 0;  bottom: 0; content: ''; background: rgba(0, 0, 0, .3);  -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; transition: all 0.4s ease; z-index: 1}
+.feature-items article:hover:after{opacity: 0;}
+.feature-items .small-img{width: 33.33333333333333%; height:100%; float: right;}
+.feature-items .small-img article{width: 100%; height: 236px; border-bottom:2px solid #ffffff;  clear: both; position: relative; transition: all 0.4s ease}
+.feature-items .small-img article:last-child{border-bottom:0}
+.feature-items .small-img article .content { position: absolute; left: 25px; bottom: 25px; right: 25px; max-width: 300px; }
+.feature-items .small-img article .content .post-date { display: block; color: rgba(255,255,255,.7); font-size: 16px; height: 27px; line-height: 27px; padding-left: 25px; margin-bottom: 6px; background: url(../images/featured-cover-post-date.png) 2px center no-repeat;}
+.feature-items .small-img article .content h2 { font-weight: 500; font-size: 21px; letter-spacing: 0.5px; line-height: 1.3; text-shadow: 0 2px 0 rgba(0, 0, 0, .3); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================================================================================
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+     input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], input[type="submit"], input[type="password"], select, textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+     input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], input[type="submit"], input[type="password"], select, textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+	
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+     input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], input[type="submit"], input[type="password"], select, textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+	
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+}
+
+
+
+
+
+
+
